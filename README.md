@@ -81,7 +81,7 @@ ttyUSB[0-9]
 
 the script runs the command to restart the appropriate service.
 
-For example of the last field was:
+For example if the last field was:
 
 ```
 ttyUSB0
