@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# @(!--#) @(#) serial-getty-restarter.sh, sversion 0.1.0, fversion 001, 16-february-2025
+# @(!--#) @(#) serial-getty-restarter.sh, sversion 0.1.0, fversion 002, 16-february-2025
 #
 # watch dmesg output for USB serial devices and restart the serial-getty service associated with it
 #
