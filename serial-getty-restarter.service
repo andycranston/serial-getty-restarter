@@ -1,0 +1,8 @@
+[Unit]
+Description=Script to watch for new USB serial devices and restart the serial-getty@ttyUSB[0-9].service service
+
+[Service]
+ExecStart=/usr/local/bin/serial-getty-restarter.sh
+
+[Install]
+WantedBy=multi-user.target
