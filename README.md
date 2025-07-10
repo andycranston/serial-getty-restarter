@@ -22,25 +22,27 @@ Run:
 sudo ./Install.sh
 ```
 
-Insert a USB serial adaptor.
+Insert a USB serial adaptor to a spare USB port on the Raspberry Pi.
 
-Attach a serial port terminal emulator press return a few times.
+Attach a serial port terminal emulator to the USB serial adapter's 9-pin
+connector and then press return a few times.
 
 A login prompt should be displayed.
 
-If no login prompt is displayed try sending a BREAK and pressing return a few times again.
+If no login prompt is displayed try sending a BREAK from the serial port
+terminal emulatipn program and pressing return a few times again.
 
 Login to the Raspberry Pi.
 
 Finished :-]
 
-## Sending a BREAK! What do you mean?
+## Sending a BREAK from the terminal emulation program! What do you mean?
 
 With serial connections sending a break means dropping the connection for a short time. This
-can (hopefully) have the effect of getting th device at the other end of the serial link
-to reset and autodetect the baud rate. It does not always work but is always worth a try.
+can (hopefully) have the effect of getting the device at the other end of the serial link
+to reset and autodetect the baud rate. It does not always work but is `ALWAYS` worth a try.
 
-Here are the methods to send a break with various terminal emulation programs:
+Here are the methods to send a break with various serial port terminal emulation programs:
 
 ### MobaXterm on Windows
 
@@ -60,13 +62,13 @@ Try the following baud rates with your terminal emulation program:
 + 38400
 + 9600
 
-Check the service is running:
+Check the serial-getty-restarter service is running:
 
 ```
 sudo systemctl status serial-getty-restarter.service
 ```
 
-Check the getty process is running:
+Check the getty process is running for the USB serial adapter:
 
 ```
 ps aux | grep ttyUSB
