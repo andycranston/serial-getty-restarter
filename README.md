@@ -52,6 +52,14 @@ Press and release the pause/[break] key.
 
 Release the control key.
 
+### PuTTY on Windows
+
+Click the PuTTY icon in the top left hand area of the PuTTY window.
+
+From the displayed menu click on "Reset Termial".
+
+Press return a few times to get the login prompt.
+
 
 ## Trouble shooting tips
 
